@@ -5,7 +5,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView android:text="This is our first app" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/mainText"
+        android:layout_marginTop="53dp"
+        android:src="@drawable/steve" />
+
+    <TextView android:text="This is our first app" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginBottom="48dp" />
+
 
 </RelativeLayout>
